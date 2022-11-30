@@ -1,0 +1,6 @@
+configuration {
+  display-drun: "Apps";
+  modi: "window,drun,run,emoji";
+}
+
+@theme "/usr/share/rofi/themes/glue_pro_blue.rasi"
