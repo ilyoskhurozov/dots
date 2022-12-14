@@ -15,7 +15,7 @@ cmd open ${{
     esac
 }}
 
-cmd jump %lf -remote "send $id cd $1"
+cmd jump %lf -remote "send $id cd \"$1\""
 
 cmd mkdir %{{
   printf "Directory Name: "
