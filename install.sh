@@ -24,4 +24,12 @@ do
   cp_app_config $APP
 done
 
+if
+  command -v docker > /dev/null
+then
+  update ~/.docker $cur_dir/.docker
+else
+  echo "docker configs aren't copied as it is not installed"
+fi
+
 update ~/.config/wall.png $cur_dir/.config/wall.png
