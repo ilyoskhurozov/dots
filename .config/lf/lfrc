@@ -61,6 +61,7 @@ map mf mkfile
 map md mkdir
 map ee $$EDITOR "$f"
 map es $sudo $EDITOR "$f"
+map z %du -hs "$f"
 
 # Archive
 
