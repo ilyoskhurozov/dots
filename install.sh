@@ -19,7 +19,7 @@ cp_app_config() {
 
 update ~/.bashrc $cur_dir/.bashrc
 
-for APP in alacritty flameshot lf neofetch nvim paru rofi
+for APP in alacritty flameshot lf neofetch nvim paru rofi btop
 do
   cp_app_config $APP
 done
