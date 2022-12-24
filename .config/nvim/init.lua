@@ -30,8 +30,5 @@ for key, value in pairs(options) do
   vim.opt[key] = value
 end
 
--- remove trailing spaces on save
-vim.cmd [[autocmd BufWritePre * %s/\s\+$//e]]
-
 -- save last position
 vim.cmd [[autocmd BufReadPost * if &ft !~# 'commit\|rebase' && line("'\"") > 1 && line("'\"") <= line("$") | exe 'normal! g`"' | endif]]
